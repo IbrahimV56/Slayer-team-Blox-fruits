@@ -1,0 +1,21 @@
+import random
+
+def papy_mange_mogu():
+    mogu_mogu = ["Pomme", "Banane", "Pastèque", "Orange", "Fraise"]
+    papy_faim = True
+
+    while papy_faim:
+        choix_mogu = random.choice(mogu_mogu)
+        print("Papy mange un", choix_mogu)
+        
+        # Ajoutez ici d'autres actions ou conditions selon le déroulement du jeu
+        # Par exemple, vous pouvez ajouter des points, des niveaux, etc.
+
+        continuer = input("Papy veut-il manger un autre mogu mogu ? (Oui/Non) ")
+        if continuer.lower() == "non":
+            papy_faim = False
+
+    print("Papy a fini de manger ses mogu mogu ! Bon appétit, Papy !")
+
+# Appel de la fonction principale pour lancer le jeu
+papy_mange_mogu()
